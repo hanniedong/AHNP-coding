@@ -1,0 +1,7 @@
+<h1> Users </h1>
+
+<% if @users %>
+  <%= render partial: 'users/table', locals: {users: @users} %>
+<% end %>
+
+<%= link_to 'Refresh', fetch_users_path, remote: true %>
