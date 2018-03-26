@@ -1,7 +1,17 @@
-<table id = "table">
 
+<table class = "table" id = "table">
+  <thead class = "thead-light">
+    <tr>
+      <th> # </th>
+      <th > user agent string </th>
+      <th> counter </th>
+      <th> first visit </th>
+      <th> recent visit </th>
+    </tr>
+  </thead>
   <% users.each do |user| %>
     <tr>
+      <td> <%= user.id %> </td>
       <td> <%= user.user_agent %> </td>
       <td> <%= user.counter %> </td>
       <td> <%= user.first_visit %> </td>
