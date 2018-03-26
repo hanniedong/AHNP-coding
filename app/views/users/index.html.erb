@@ -1,5 +1,7 @@
+<h1> Users </h1>Users
+
 <% if @users %>
   <%= render partial: 'users/table', locals: {users: @users} %>
 <% end %>
 
-<%= link_to 'Refresh', users_path, remote: true %>
+<button><%= link_to 'Refresh', users_path, remote: true %></button>
