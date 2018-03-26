@@ -4,4 +4,4 @@
   <%= render partial: 'users/table', locals: {users: @users} %>
 <% end %>
 
-<button class = "btn btn-outline-primary"><%= link_to 'Refresh', users_path, remote: true %></button>
+<%= link_to 'Refresh', fetch_users_path, remote: true %>
