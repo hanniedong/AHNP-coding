@@ -14,8 +14,8 @@
       <td> <%= user.id %> </td>
       <td> <%= user.user_agent %> </td>
       <td> <%= user.counter %> </td>
-      <td> <%= user.first_visit %> </td>
-      <td> <%= user.recent_visit %> </td>
+      <td> <%= user.first_visit.localtime.strftime( '%m-%d-%Y %l:%M:%S %p') %> </td>
+      <td> <%= user.recent_visit.localtime.strftime( '%m-%d-%Y %l:%M:%S %p') %> </td>
     </tr>
   <% end %>
 </table>
