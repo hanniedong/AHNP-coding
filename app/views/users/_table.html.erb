@@ -1,0 +1,11 @@
+<table id = "table">
+
+  <% users.each do |user| %>
+    <tr>
+      <td> <%= user.user_agent %> </td>
+      <td> <%= user.counter %> </td>
+      <td> <%= user.first_visit %> </td>
+      <td> <%= user.recent_visit %> </td>
+    </tr>
+  <% end %>
+</table>

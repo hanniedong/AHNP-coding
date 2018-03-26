@@ -1,1 +1,5 @@
-<%= @cached_guest_user %>
+<% if @users %>
+  <%= render partial: 'users/table', locals: {users: @users} %>
+<% end %>
+
+<%= link_to 'Refresh', users_path, remote: true %>
